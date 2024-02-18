@@ -1,0 +1,21 @@
+
+
+1. confugureStore to create a store
+
+2. "reducers" are functions that take in 2 things as input ( prevState, action ) and return newly updated state
+
+        ( prevState, action ) => return newState
+
+addTodo: (state, action) => {
+            "action" => is a object that will contains payload, that contains the content that is changed
+            "state => it contains the previous state
+            
+            const todo = { id: nanoid(), text: action.payload }
+          }
+
+
+3. nanoId: generated unique id
+
+4. "Slices" are functions that contain "initialState" & "reducer function"  of a particular feature
+
+5. 
